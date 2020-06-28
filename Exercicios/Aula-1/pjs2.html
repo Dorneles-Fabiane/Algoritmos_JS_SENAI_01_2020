@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PROBLEMA JS2 - CALCULA VENDA</title>
+</head>
+<body>
+    <h2>PROBLEMA JS2 - CALCULA VENDA</h2>
+    <p>Informe o valor do produto:<input type="number" id="valor"></p>
+    <p><input type="button" value="Mostrar Opções" onclick="mostrar()"></p>
+    <p id="aVista"></p>
+    <p id="parcelado"></p>
+
+    <script>
+        function mostrar()
+        {
+            var valor = document.getElementById("valor").value;
+            var desconto = Number(valor) * (10/100);
+            var valorAvista = valor - desconto;
+            var parcelado = valor / 3
+
+            document.getElementById("aVista").innerHTML = `Valor a vista R$ <strong>${valorAvista.toFixed(2)}</strong>`;
+            document.getElementById("parcelado").innerHTML = `Valor parcelado em 3x R$ <strong> ${parcelado.toFixed(2)}</strong>`;
+        }
+    </script>
+</body>
+</html>

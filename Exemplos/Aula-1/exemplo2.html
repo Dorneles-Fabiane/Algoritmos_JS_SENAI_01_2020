@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo 2</title>
+</head>
+<body>
+    <h2>Exemplo 2</h2>
+    <p>Nome: <input type="text" id="nome"></p>
+    <input type="button" value="mostrar" onclick="mostrar_ola()">
+    <p id="resposta"></p>
+    <script>
+        function mostrar_ola()
+        {
+
+            var nome = document.getDocementById("nome").value;
+            document.getElementById.textContent = `Seja bem vindo${nome}!`;
+            
+        }
+    </script>
+</body>
+</html>

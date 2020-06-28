@@ -1,0 +1,29 @@
+body{
+    background: #20097494;
+    font:normal Helvetica;
+}
+header{
+    color: white;
+    text-align: center;
+    font: bold 15pt helvetica;
+}
+section{
+    background: white;
+    border-radius:10px;
+    padding: 50px;
+    width: 700px;
+    margin: auto;
+}
+div {
+    margin-top: 10px;
+    padding: 5px;
+}
+div#saidaDeTexto {
+    display: flex;
+    flex-direction: unset;
+}
+footer {
+    color: white;
+    text-align: center;
+    margin-top: 15px;
+}

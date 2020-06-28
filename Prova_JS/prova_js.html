@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>AV02 - Prova do ENEM</title>
+</head>
+<body>
+    <header>
+        <h1>Prova do ENEM</h1>
+        <h2>Seja Bem Vindo ao Verificador de Notas de Provas do Enem</h2>
+        <p>Insira abaixo o nome do aluno, a repsposta do gabarito e do aluno respectivamente.</p>
+        <p>Opções válidas: A, B, C, D OU E.</p>
+    </header>
+    <section>
+        <div id="input">
+            <img src="img/enem_logo.png">
+            <div class="div01">
+                <p>
+                    <label for="nome">Nome do Candidato</label>
+                    <input type="text" id="nome" placeholder="Maria Silva">
+                </p>
+                
+                <p>
+                    <label for="gabarito">Resposta Oficial</label>
+                    <input type="text" id="gabarito" placeholder="A" size="5">
+                    <button id="btAdicionarGab">Adicionar</button>
+                </p>
+                <p>
+                    <label for="listaResp">Resposta do Candidato</label>
+                    <input type="text" id="listaResp" placeholder="A"  size="5">
+                    <button id="btAdicionarResp">Adicionar</button>
+                    
+                </p>
+            </div> 
+            <div class="div02">
+                <button id="btExibirDados">Exibir Dados</button>
+                <button id="btVerificar">Verificar Resultados</button>
+                <button id="btLimpaVetores">Reiniciar os valores</button>
+            </div>      
+        </div>
+        <div class="div01">
+               <pre id="resp"></pre>
+        </div>
+    </section>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

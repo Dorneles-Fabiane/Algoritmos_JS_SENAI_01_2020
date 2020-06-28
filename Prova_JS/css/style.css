@@ -1,0 +1,55 @@
+body{
+    background: #00306bda;
+    font:normal 15pt Helvetica;
+}
+header{
+    color: white;
+    text-align: center;
+}
+section{
+    background: white;
+    border-radius:10px;
+    padding: 50px;
+    width: 760px;
+    min-height: 700px;
+    margin: auto;
+}
+img {
+    float: left;
+    margin-right: 5px;
+    display: block;
+}
+div {
+    margin-top: 10px;
+    padding: 5px;
+}
+div.div01 {
+    margin-left: 10px;
+    float: right;
+    height: 150px;
+    position: relative;
+}
+div.div02 {
+    margin-left: 10px;
+    float: right;
+    height: 50px;
+    position: relative;
+}
+div#output {
+    margin-left: 10px;
+    height: 50px;
+    position: relative;
+}
+button {
+    background: #006CB7;
+    color: whitesmoke;
+    border: 1px;
+    border-radius: 8px;
+    padding: 6px;
+    font: bold;
+}
+button:hover {
+    background: #004475;
+    padding: 9px;
+    transition: 400ms;
+}

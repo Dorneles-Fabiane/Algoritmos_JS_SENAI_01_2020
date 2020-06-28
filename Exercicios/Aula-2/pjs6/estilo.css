@@ -1,0 +1,23 @@
+body{
+    background: #1f3faa;
+    font:normal 15pt Helvetica;
+
+}
+header{
+    color: white;
+    text-align: center;
+
+}
+section{
+    background: white;
+    border-radius:10px;
+    padding: 50px;
+    width: 800px;
+    margin: auto;
+}
+footer{
+    color: white;
+    text-align: center;
+    font-style: italic;
+}
+

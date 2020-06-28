@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PROBLEMA JS3 - PROMOÇÃO FARMÁRCIA
+    </title>
+</head>
+<body>
+    <h2>PROBLEMA JS3 - PROMOÇÃO FARMÁRCIA</h2>
+    <p>Medicamento: <input type="text" id="medicamento"></p>
+    <p>Preço: <input type="number" id="preco"></p>
+    <p><input type="button" value="Mostrar Promoção" onclick="mostrar()"></p>
+    <p id="promocao"></p>
+    <p id="resposta"></p>
+
+    <script>
+        function mostrar()
+        { 
+            var valor = document.getElementById("preco").value;
+            var valorTotal = valor * 2
+            var remedio = document.getElementById("medicamento").value;
+            document.getElementById("promocao").innerHTML = `Promoção de <strong> ${remedio} </strong>:`;
+            document.getElementById("resposta").innerHTML = `Leve 2 por apenas <strong> R$ ${Math.trunc(valorTotal).toFixed(2)} </strong>`;
+        }
+    </script>
+</body>
+</html>

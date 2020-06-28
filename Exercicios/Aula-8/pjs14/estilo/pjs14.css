@@ -1,0 +1,29 @@
+body{
+    font:normal 15pt Helvetica;
+    color: rgb(255, 81, 0);
+}
+header{
+    text-align: center;
+    font: bold 15pt helvetica;
+}
+section{
+    border-radius:10px;
+    padding: 50px;
+    width: 700px;
+    margin: auto;
+    text-align: center;
+}
+div {
+    margin-top: 10px;
+    padding: 5px;
+}
+button {
+    padding: 13px;margin: 5PX;
+    border: 5px;
+    border-radius: 6px;
+    background: rgba(251, 59, 0, 0.637);
+    color: white;
+}
+button:hover {
+    background: rgb(255, 81, 0);
+}

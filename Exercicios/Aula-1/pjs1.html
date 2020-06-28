@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PROBLEMA JS1 - TAXA DO GARÇOM</title>
+</head>
+<body>
+    <h2>PROBLEMA JS1 - TAXA DO GARÇOM</h2>
+
+    <script>
+
+        alert("Olá, seja bem vindo!");
+        var valorJantar = Number(prompt("Informe o valor do jantar:"));
+
+        var valorPorGarcom = valorJantar * (10/100);
+        var valorTotJantar = valorJantar + valorPorGarcom;
+
+        alert("A porcentagem de 10% referente ao serviço do garçom é de R$: " + valorPorGarcom).toFixed(2);
+        alert("O valor total a ser pago pelo jantar é de R$ " + valorTotJantar.toFixed(2));
+        
+    </script>
+</body>
+</html>

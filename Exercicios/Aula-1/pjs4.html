@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PROBLEMA JS4 - LAN HOUSE</title>
+</head>
+<body>
+    <h2>PROBLEMA JS4 - LAN HOUSE</h2>
+    <p>Valor por cada 15min de uso: <input type="number" id="preco"></p>
+    <p>Tempo de Uso (min): <input type="number" id="tempoUso"></p>
+    <p><input type="button" value="Calcular Valor a Pagar" onclick="mostrarValor()"></p>
+    <p id="resposta"></p>
+
+    <script>
+        function mostrarValor()
+        {
+            var preco = document.getElementById("preco").value;
+            var tempoUso = document.getElementById("tempoUso").value;
+            var divisao = Math.ceil(tempoUso/15);
+            var multiplica = divisao * preco;
+            document.getElementById("resposta").innerHTML = `Valor a pagar R$ <strong> ${multiplica} </strong>`
+        }
+    </script>
+</body>
+</html>
